@@ -1,24 +1,24 @@
 {
   "name": "PIA",
-  "version": "1.6.2",
-  "description": "Version Portable Outil PIA",
+  "version": "1.6.3",
+  "description": "PIA",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "mac": "electron-builder -m",
     "win": "electron-builder -w --x64 --ia32",
     "linux": "electron-builder -l",
-    "win-cert": "electron-builder create-self-signed-cert -p atnos",
-    "publish-to-github": "electron-builder build -mwl --x64 --ia32 -p onTagOrDraft"
+    "win-cert": "electron-builder create-self-signed-cert -p volvox",
+    "publish-to-github": "electron-builder build -w --x64 --ia32 -p onTagOrDraft"
   },
-  "author": "ATNOS",
-  "repository": "https://github.com/LINCnil/pia-app",
+  "author": "VOLVOX Consulting",
+  "repository": "https://github.com/volvox-consulting/pia-app",
   "keywords": [
     "Electron",
     "PIA"
   ],
   "build": {
-    "appId": "com.atnos.pia",
+    "appId": "pl.volvox.pia",
     "directories": {
       "buildResources": ".",
       "output": "releases"
@@ -34,9 +34,9 @@
       "publish": [
         "github"
       ],
-      "certificateFile": "private/atnos.pfx",
+      "certificateFile": "private/volvox.pfx",
       "verifyUpdateCodeSignature": false,
-      "publisherName": "ATNOS"
+      "publisherName": "VOLVOX Consulting"
     },
     "linux": {
       "publish": [
